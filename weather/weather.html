@@ -1,0 +1,50 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Weather App — OpenWeatherMap</title>
+		<link rel="stylesheet" href="weather.css" />
+	</head>
+	<body>
+		<main class="app">
+		<h1 class="title">Weather App</h1>
+
+
+		<form id="searchForm" class="search-form">
+		<input id="cityInput" type="text" placeholder="Enter city name (e.g. London)" required />
+		<button type="submit">Search</button>
+		</form>
+
+
+		<section id="result" class="result hidden" aria-live="polite">
+		<div class="header">
+		<h2 id="cityName"></h2>
+		<img id="weatherIcon" alt="weather icon" />
+		</div>
+
+
+		<ul class="details">
+		<li><strong>Temperature:</strong> <span id="temp"></span></li>
+		<li><strong>Feels like:</strong> <span id="feelsLike"></span></li>
+		<li><strong>Humidity:</strong> <span id="humidity"></span></li>
+		<li><strong>Wind:</strong> <span id="wind"></span></li>
+		<li><strong>Conditions:</strong> <span id="description"></span></li>
+		</ul>
+
+
+		<p id="extra"></p>
+		</section>
+
+
+		<p id="error" class="error" role="alert"></p>
+
+
+		<footer class="footer">
+		<small>Data provided by <a href="https://openweathermap.org/" target="_blank" rel="noopener">OpenWeatherMap</a></small>
+		</footer>
+		</main>
+
+
+		<script src="weather.js"></script>
+	</body>
+</html>
